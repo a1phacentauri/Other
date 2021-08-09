@@ -1,0 +1,67 @@
+.loader-mask {
+    position: fixed;
+    background: #000;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+    transition:.5s;
+   }
+   .hide {
+    transform: scale(0);
+   }
+   .loader {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    animation: loader 2s linear infinite;
+   }
+   @keyframes loader {
+    100% {transform: rotate(360deg);}
+   }
+   .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+   }
+   .red {
+    background: red;
+    box-shadow: 0 0 20px 5px red;
+    top: 10px;
+    left: calc(50% - 15px);
+    animation: red 4s infinite;
+   }
+   @keyframes red {
+    50% {
+     top:30px;
+    }
+   }
+   .green {
+    background: green;
+    box-shadow: 0 0 20px 5px green;
+    bottom:0;
+    right: 0;
+    animation: green 4s infinite;
+   }
+   @keyframes green {
+    50% {
+     bottom: 30px;
+     right: 30px;
+    }
+   }
+   .blue {
+    background: blue;
+    box-shadow: 0 0 20px 5px blue;
+    bottom:0;
+    left: 0;
+    animation: blue 4s infinite;
+   }
+   @keyframes blue {
+    50% {
+     bottom: 30px;
+     left: 30px;
+    }
+   }
