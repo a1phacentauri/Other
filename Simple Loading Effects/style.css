@@ -1,0 +1,52 @@
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    animation:effect 2s ease infinite; 
+}
+
+/*Функция по умолчанию, анимация начинается медленно, разгоняется быстро и замедляется в конце. Соответствует cubic-bezier(0.25,0.1,0.25,1).*/
+
+/*Анимация проигрывается бесконечно.*/
+
+/*Ключевые кадры указываются с помощью правила @keyframes*/
+
+@keyframes effect{  /*имя анимации { список правил }*/
+    0%{
+        width: 40px;
+        height: 40px;
+    }
+    90%{
+        width: 70px;
+        height: 70px;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+span{
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #f30404;
+}
+
+span:nth-child(2){
+    right: 0;
+}
+span:nth-child(3){
+    right: 0;
+    bottom: 0;
+}
+span:nth-child(4){
+    left: 0;
+    bottom: 0;
+}
