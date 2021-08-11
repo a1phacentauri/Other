@@ -1,4 +1,4 @@
-let counter = document.querySelector('.counter');
+let counter = document.querySelector('.counter'); /*метод querySelector() возвращает первый элемент (Element) документа, который соответствует указанному селектору или группе селекторов. Если совпадений не найдено, возвращает значение null.*/
 let beer = document.querySelector('.beer-full');
 
 beer.addEventListener('animationstart', function(){

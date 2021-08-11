@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f06060;
+  }
+  
+  .icons {
+    display: flex;
+    list-style: none;
+    width: 550px;
+    height: 80px;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 70px;
+    border: 3px solid #fff;
+    margin-right: 36px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+  }
+  
+  .icon .fa{
+    color: #fff;
+    font-size: 30px;
+    transition: all 0.5s linear;
+  }
+  
+  .icon:hover{
+    background: #fff;
+    box-shadow: 0 0 30px 3px #fff;
+  }
+  
+  .icon:hover .fa{
+    color: #f06060;
+  }
