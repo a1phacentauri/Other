@@ -1,0 +1,41 @@
+.box{
+    position: relative;
+}
+.btn{
+    position: relative;
+    width: 170px;
+    height: 60px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.btn::before , 
+.btn::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #121212;
+    border-top: transparent;
+    transition: .4s;
+    border-right: transparent;
+    box-sizing: border-box;
+}
+.btn::before{
+    bottom: 0;
+    left: 0;
+}
+.btn::after{
+    top: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+.btn:hover:before , 
+.btn:hover:after{
+    width: 100%;
+    height: 100%;
+}
